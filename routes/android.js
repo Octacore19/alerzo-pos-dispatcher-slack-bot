@@ -9,7 +9,7 @@ const authToken = process.env.AUTH_TOKEN;
 const triggerToken = process.env.TRIGGER_TOKEN;
 const slackAccessToken = process.env.SLACK_CHANNEL_ACCESS_TOKEN;
 
-const branches_api = `https://gitlab/alerzo.com/api/v4/projects/${project_id}/repository/branches`;
+const branches_api = `https://gitlab.alerzo.com/api/v4/projects/${project_id}/repository/branches`;
 const trigger_api = `https://gitlab.alerzo.com/api/v4/projects/${project_id}/trigger/pipeline`;
 const pipeline_api = `https://gitlab.alerzo.com/api/v4/projects/${project_id}/pipelines`;
 
