@@ -43,13 +43,13 @@ router.post('/get_apk', function (req, res) {
         const branch_list = [];
         for (let index = 0; index < response.data.length; index++) {
           const temp = response.data[index];
+          console.log(`Branch => ${temp}`)
           if (temp.protected) {
             const branch = {
               text: temp.name,
               value: temp.name
             };
             branch_list.push(branch);
-            console.log(`Branches => ${branch_list}`)
           }
         }
 
