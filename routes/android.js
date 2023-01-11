@@ -49,6 +49,7 @@ router.post('/get_apk', function (req, res) {
               value: temp.name
             };
             branch_list.push(branch);
+            console.log(`Branches => ${branch_list}`)
           }
         }
 
