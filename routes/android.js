@@ -98,6 +98,7 @@ router.post('/actions', async (req, res) => {
       bodyForm.append('variables[SLACK_REFERRER_ID]', user_id);
       bodyForm.append('variables[SLACK_CHANNEL_ID]', channel_id);
       bodyForm.append('variables[SLACK_CHANNEL_ACCESS_TOKEN]', slackAccessToken);
+      bodyForm.append('variables[BRANCH]', branch_selected);
 
       axios({
         method: 'post',
